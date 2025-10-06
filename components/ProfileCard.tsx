@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleSheet, Text } from "react-native";
+import { Image, StyleSheet, Text, View } from "react-native";
 
 // Define the props interface for type safety
 interface ProfileCardProps {
@@ -16,34 +16,51 @@ const ProfileCard: React.FC<ProfileCardProps> = ({
   imageUrl,
 }) => {
   return (
-    <>
-      <Text>Replace this part with your soluce</Text>
-    </>
+    <View style = {styles.card}>
+      <View style={styles.image}>
+        <Image style={styles.image} source={{
+          uri: imageUrl,
+        }}/>
+      </View>
+      <View style={styles.textContainer}>
+        <Text style={styles.name}>{name}</Text>
+        <Text style={styles.jobTitle}>{jobTitle}</Text>
+      </View>
+      
+       </View>
+      
+      
+     
+    
   );
 };
 
 const styles = StyleSheet.create({
-  card: {
-    backgroundColor: "#fff",
-    borderRadius: 16,
-    padding: 20,
-    margin: 16,
-    flexDirection: "row",
-    alignItems: "center",
-    shadowColor: "#000",
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.2,
-    shadowRadius: 4,
-    elevation: 5,
-  },
-  image: {
+ card: {
+  backgroundColor: "#fff",
+  borderRadius: 16,
+  padding: 20,
+  margin: 16,
+  flexDirection: "row",  
+  alignItems: "center",
+  shadowColor: "#000",
+  shadowOffset: { width: 0, height: 2 },
+  shadowOpacity: 0.2,
+  shadowRadius: 4,
+  elevation: 5,
+},
+image: {
+  
     width: 80,
     height: 80,
     borderRadius: 40,
-  },
-  textContainer: {
-    marginLeft: 16,
-  },
+    marginRight: 16, 
+           
+},
+textContainer: {
+  marginLeft: 16,  
+  flexDirection: "column", 
+},
   name: {
     fontSize: 20,
     fontWeight: "bold",
