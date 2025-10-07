@@ -1,6 +1,6 @@
 import { StyleSheet, View } from "react-native";
 import ProfileCard from "../../components/ProfileCard";
-import TodoItem from "../../components/TodoItem";
+import TodoItem from "../../components/TodoItem.js";
 const USERS_DATA = [
   { id: '1', nom: 'Alice Martin', email: 'alice.martin@email.com' },
   { id: '2', nom: 'Benjamin Dubois', email: 'ben.dubois@email.com' },
