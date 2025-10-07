@@ -1,6 +1,6 @@
-import { ScrollView, StyleSheet } from "react-native";
+import { StyleSheet, View } from "react-native";
 import ProfileCard from "../../components/ProfileCard";
-
+import TodoItem from "../../components/TodoItem";
 const USERS_DATA = [
   { id: '1', nom: 'Alice Martin', email: 'alice.martin@email.com' },
   { id: '2', nom: 'Benjamin Dubois', email: 'ben.dubois@email.com' },
@@ -10,17 +10,27 @@ const USERS_DATA = [
 ];
 
 
+
+
 export default function HomeScreen() {
   return (
-      <ScrollView>
+     <View style={styles.container}>
+
       <ProfileCard
-      name="Aminé"
-      jobTitle="Etudiante BA"
+      name="Alice"
+      jobTitle="React Native Developer"
       imageUrl="https://picsum.photos/200/300"
     />
-      </ScrollView>
+    <TodoItem/>
+       
+      
+    </View>
   );
 }
+
+
+
+
 
 const styles = StyleSheet.create({
   container: {

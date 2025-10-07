@@ -19,7 +19,7 @@ const ProfileCard: React.FC<ProfileCardProps> = ({
     <View style = {styles.card}>
       <View style={styles.image}>
         <Image style={styles.image} source={{
-          uri: imageUrl,
+          uri: imageUrl
         }}/>
       </View>
       <View style={styles.textContainer}>
