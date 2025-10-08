@@ -8,7 +8,8 @@ const USERS_DATA = [
   { id: '5', nom: 'Émilie Rousseau', email: 'emilie.rousseau@email.com' },
 ];
 
-
+// aminé elle est trop smart 
+// Amaury m'énerve il me soule j'en ai marre 
 export default function HomeScreen() {
   return (
       <ScrollView>
