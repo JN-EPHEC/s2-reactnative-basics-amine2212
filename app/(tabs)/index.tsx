@@ -9,6 +9,7 @@ const USERS_DATA = [
 ];
 
 
+// Amaury m'énerve il me soule j'en ai marre 
 export default function HomeScreen() {
   return (
       <ScrollView>
